@@ -1,0 +1,17 @@
+# Shared EMW Knowledge Index
+# Add one record per knowledge document. Keep this index concise and searchable.
+schema_version: 1
+updated_at: ""
+entries: []
+# Entry metadata fields:
+# - id: "KB-0001"
+#   title: "Descriptive, searchable title"
+#   path: "debugging/example.md"
+#   category: "debugging"
+#   status: "verified"
+#   confidence: "high"
+#   technologies: ["Python", "PostgreSQL"]
+#   tags: ["transactions", "idempotency"]
+#   applies_to: "Short applicability statement"
+#   reviewed_at: "YYYY-MM-DD"
+#   supersedes: []
