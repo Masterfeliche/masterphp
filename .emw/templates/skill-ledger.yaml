@@ -1,0 +1,30 @@
+# Evidence-backed developer mastery ledger.
+# Do not promote a level without evidence. Use [] when no evidence exists.
+version: 1
+project: ""
+last_reviewed: ""
+levels:
+  M0: "Unknown"
+  M1: "Awareness"
+  M2: "Guided Application"
+  M3: "Independent Application"
+  M4: "Transfer & Mastery"
+assistance:
+  A0: "Independent"
+  A1: "Conceptual hint"
+  A2: "Pseudocode or targeted example"
+  A3: "AI skeleton or guided pair implementation"
+  A4: "AI-authored implementation"
+skills:
+  - id: "example.backend.authorization"
+    name: "Backend authorization"
+    technology: "Project backend"
+    scope: "S1"
+    prerequisites: []
+    target_level: "M3"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    last_assessed: null
+    next_assessment: "Explain and implement an object-level access check independently"
+    notes: "Example node; replace or remove during project onboarding."
