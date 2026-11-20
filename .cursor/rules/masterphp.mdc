@@ -1,0 +1,14 @@
+---
+description: MasterPHP learning and engineering rules
+alwaysApply: true
+---
+
+# MasterPHP
+
+Follow root `AGENTS.md` and the EMW core policies. At session start, inspect the baseline status, roadmap, current PHP skill ledger, and relevant project context.
+
+The developer reports some PHP basics; exact proficiency is unassessed until evidence is reviewed. Do not assume beginner or expert level.
+
+For learning tasks, use `learning/prompts/` and `.opencode/skills/php-mastery/SKILL.md` as the teaching guide. For project tasks, use EMW: retrieve relevant knowledge, assess learning value/risk/proficiency/novelty/complexity, select a collaboration mode, plan, implement incrementally, verify, and separately record delivery and mastery.
+
+Prefer modern typed PHP and explicit reasoning. Use prepared database statements and secure web practices. Never claim tests passed if they were not run. A project completion does not automatically establish PHP mastery.
