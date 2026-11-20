@@ -1,0 +1,51 @@
+name: PHP workspace quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  syntax-and-composer:
+    name: PHP 8.5 compatibility checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.5"
+          extensions: mbstring, mysqli, pdo_mysql
+          tools: composer:v2
+          coverage: none
+
+      - name: Show PHP environment
+        run: |
+          php -v
+          php --ini
+          php -m
+
+      - name: Validate Composer manifest
+        run: composer validate --no-check-publish
+
+      - name: Lint all PHP files
+        shell: bash
+        run: |
+          mapfile -d '' files < <(find . -type f -name '*.php' -not -path './vendor/*' -print0)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No PHP files found."
+            exit 0
+          fi
+          for file in "${files[@]}"; do
+            echo "Linting ${file}"
+            php -l "${file}"
+          done
+
+# PHP 8.6.0 is the current stable learning target, but the selected setup-php
+# integration currently exposes stable 8.5 rather than stable 8.6. The workspace
+# keeps its Composer constraint at ^8.5 and should also be smoke-tested locally
+# on PHP 8.6 as soon as that runtime is installed. Do not use an 8.6 nightly build
+# as a substitute for the stable release.
