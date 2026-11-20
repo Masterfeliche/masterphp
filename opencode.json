@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "learning/roadmap.md",
+    "learning/skills/php-skill-map.yaml",
+    ".emw/core/operating-principles.md",
+    ".emw/core/collaboration-modes.md",
+    ".emw/core/mastery-framework.md",
+    ".emw/core/knowledge-intelligence.md",
+    ".emw/prompts/README.md",
+    "learning/prompts/README.md"
+  ]
+}
