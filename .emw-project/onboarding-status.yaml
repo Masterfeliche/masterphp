@@ -1,0 +1,26 @@
+schema_version: 1
+status: "complete"
+last_reviewed: "2026-11-20"
+project_profile: ".emw-project/project-profile.md"
+developer_profile: ".emw-project/developer-profile.md"
+delivery_ledger: ".emw-project/delivery-ledger.md"
+skill_ledger: ".emw-project/skill-ledger.yaml"
+project_knowledge: ".project-knowledge/"
+baseline_assessment:
+  status: "not-started"
+  file: "learning/baseline/baseline-assessment.md"
+  results_file: "learning/baseline/baseline-results.md"
+completed_checks:
+  - "Repository structure inspected"
+  - "Existing PHP starter file inspected"
+  - "Learning and project tracks initialized"
+  - "EMW guidance vendored"
+unknowns:
+  - "Exact independent PHP proficiency by concept"
+  - "Local PHP CLI version and installed extensions"
+  - "Composer and test runner availability"
+  - "Preferred database/environment for practical projects"
+refresh_triggers:
+  - "Major PHP version or toolchain change"
+  - "Major learning goal or project portfolio change"
+  - "Architecture or project structure change"
