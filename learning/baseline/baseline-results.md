@@ -1,6 +1,6 @@
 # PHP Baseline Results
 
-<badge>Not started</badge>
+**Status:** Not started
 
 Use `baseline-results-template.md` to record the diagnostic. Complete the assessment without solution-level AI and preserve the original attempt.
 
