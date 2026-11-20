@@ -1,0 +1,166 @@
+schema_version: 1
+technology: PHP
+learning_target: "PHP 8.6 stable; preserve PHP 8.5 compatibility when practical"
+assessment_policy: "Evidence-based M0-M4; no mastery from code completion alone"
+skills:
+  - id: php.runtime.cli
+    name: PHP runtime and CLI
+    area: runtime
+    prerequisites: []
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.runtime.web-sapi
+    name: Web request lifecycle and SAPI
+    area: runtime
+    prerequisites: [php.runtime.cli]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.types.coercion
+    name: PHP types, coercion, strict typing
+    area: language
+    prerequisites: []
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.control-flow
+    name: Control flow and expressions
+    area: language
+    prerequisites: [php.types.coercion]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.arrays
+    name: Indexed, associative and nested arrays
+    area: language
+    prerequisites: [php.control-flow]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.strings
+    name: String handling and encoding
+    area: standard-library
+    prerequisites: []
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.functions
+    name: Functions, closures and callables
+    area: language
+    prerequisites: [php.types.coercion]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.errors-exceptions
+    name: Errors and exception handling
+    area: language
+    prerequisites: [php.functions]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.oop
+    name: Classes, objects, encapsulation and composition
+    area: language
+    prerequisites: [php.functions]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.oop-contracts
+    name: Interfaces, traits, enums and readonly design
+    area: language
+    prerequisites: [php.oop]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.namespaces
+    name: Namespaces and imports
+    area: language
+    prerequisites: [php.oop]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.composer
+    name: Composer and dependency management
+    area: ecosystem
+    prerequisites: [php.namespaces]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.autoloading
+    name: PSR-4 autoloading
+    area: ecosystem
+    prerequisites: [php.composer, php.namespaces]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.http
+    name: HTTP request/response handling
+    area: web
+    prerequisites: [php.runtime.web-sapi]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.sessions
+    name: Cookies and sessions
+    area: web
+    prerequisites: [php.http]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.pdo
+    name: PDO and prepared statements
+    area: database
+    prerequisites: [php.functions, php.errors-exceptions]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.sql-transactions
+    name: SQL data modeling and transactions
+    area: database
+    prerequisites: [php.pdo]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.web-security
+    name: PHP web security
+    area: security
+    prerequisites: [php.http, php.sessions, php.pdo]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.testing
+    name: Automated testing
+    area: tooling
+    prerequisites: [php.functions]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.static-analysis
+    name: Static analysis and code quality
+    area: tooling
+    prerequisites: [php.testing, php.composer]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.architecture
+    name: Application architecture and dependency injection
+    area: engineering
+    prerequisites: [php.oop-contracts, php.autoloading]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.advanced-features
+    name: Advanced PHP features and runtime behavior
+    area: language-runtime
+    prerequisites: [php.oop-contracts, php.functions]
+    target: M3
+    current: M0
+    status: unassessed
+  - id: php.frameworks
+    name: PHP framework literacy
+    area: ecosystem
+    prerequisites: [php.architecture, php.web-security, php.testing]
+    target: M3
+    current: M0
+    status: unassessed
