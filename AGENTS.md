@@ -106,3 +106,15 @@ Report:
 
 ## Human authority
 The human owns product intent and consequential decisions. Ask before irreversible, destructive, externally visible, security-sensitive, or costly operations. Do not claim tests, commits, or deployments that did not happen.
+
+## OpenCode shortcuts
+This repository includes native OpenCode configuration, project skills, and slash commands. When OpenCode is the active agent, the developer can use:
+- `/php-baseline`: present or review the baseline diagnostic.
+- `/php-learn <concept>`: deep-dive into a PHP concept.
+- `/php-challenge <concept>`: independent exercise with solution withheld.
+- `/php-project <milestone>`: plan and build a project milestone.
+- `/php-review <file or diff>`: review PHP code.
+- `/php-research <topic>`: research version-sensitive PHP behavior.
+- `/php-weekly`: review delivery, mastery, and EMW effectiveness.
+
+OpenCode discovers skills under `.opencode/skills/`. The canonical PHP mentor and engineering skills are `php-mastery` and `php-engineering`. If an agent cannot load repository instructions or commands, use the standalone prompts in `learning/prompts/` and `.emw/prompts/`.
