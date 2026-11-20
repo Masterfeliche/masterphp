@@ -1,0 +1,35 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local.php
+config/local.php
+
+# Composer
+/vendor/
+
+# Runtime artifacts
+*.log
+*.cache
+/storage/
+var/cache/
+var/log/
+
+# Test and analysis artifacts
+.phpunit.cache/
+.phpunit.result.cache
+.phpstan/
+coverage/
+build/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local databases and dumps
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
