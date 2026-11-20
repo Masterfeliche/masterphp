@@ -1,0 +1,23 @@
+{
+  "name": "masterfeliche/masterphp",
+  "description": "A structured PHP mastery and project-based learning workspace using EMW.",
+  "type": "project",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "MasterPHP\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MasterPHP\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {}
+  }
+}
