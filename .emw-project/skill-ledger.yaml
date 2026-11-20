@@ -1,0 +1,78 @@
+schema_version: 1
+project: "MasterPHP"
+last_reviewed: "2026-11-20"
+assessment_status: "pending-baseline"
+levels:
+  M0: "Unknown"
+  M1: "Awareness"
+  M2: "Guided Application"
+  M3: "Independent Application"
+  M4: "Transfer & Mastery"
+assistance:
+  A0: "Independent; no solution-level AI"
+  A1: "Conceptual hint"
+  A2: "Pseudocode or targeted example"
+  A3: "AI skeleton or guided pair implementation"
+  A4: "AI-authored implementation"
+skills:
+  - id: "php.runtime.cli"
+    name: "PHP runtime and CLI"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    next_assessment: "Baseline Part A and local CLI verification"
+  - id: "php.types"
+    name: "PHP types, coercion and strict typing"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    next_assessment: "Baseline Parts A and B"
+  - id: "php.arrays-functions"
+    name: "Arrays and functions"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    next_assessment: "Baseline Part C transaction summary"
+  - id: "php.debugging"
+    name: "PHP debugging and error handling"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    next_assessment: "Baseline Part D debugging exercise"
+  - id: "php.oop"
+    name: "PHP object-oriented programming"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    next_assessment: "Baseline Part A OOP explanation; later independent implementation"
+  - id: "php.composer"
+    name: "Composer and autoloading"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    next_assessment: "Baseline Part F; later independent PSR-4 setup"
+  - id: "php.http"
+    name: "HTTP and PHP web request handling"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    next_assessment: "Baseline Part A CLI versus web explanation"
+  - id: "php.database"
+    name: "PDO, SQL and persistence"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    next_assessment: "Baseline Part A and Project 00 review"
+  - id: "php.security"
+    name: "PHP application security"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    next_assessment: "Baseline Part E"
+  - id: "php.testing"
+    name: "Automated testing"
+    current_level: "M0"
+    confidence: "low"
+    evidence: []
+    next_assessment: "Baseline Parts C and F"
+notes: "M0 indicates no reliable evidence has been reviewed yet, not a claim that the developer knows nothing. Reassess each concept after baseline."
