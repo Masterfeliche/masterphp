@@ -51,4 +51,4 @@ When using OpenCode, the same workflows are available as project slash commands 
 - `/emw-weekly`
 - `/emw-capture`
 
-Reusable skills are available under `.opencode/skills/`: `emw-workflow`, `emw-knowledge`, and `emw-mastery`. See [OpenCode Integration](../../docs/OPENCODE.md). The prompt files in this directory remain the canonical task instructions; OpenCode commands and skills are adapters that route to them.
+Reusable skills are available under `.opencode/skills/`: `emw-workflow`, `emw-knowledge`, and `emw-mastery`. See [OpenCode Integration](../../docs/USING-OPENCODE.md). The prompt files in this directory remain the canonical task instructions; OpenCode commands and skills are adapters that route to them.
