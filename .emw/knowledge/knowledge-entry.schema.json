@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Masterfeliche/ewm-principle/blob/main/.emw/knowledge/knowledge-entry.schema.json",
+  "title": "EMW Knowledge Entry",
+  "description": "Evidence-backed reusable engineering knowledge. Markdown documents may use this schema as their metadata contract.",
+  "type": "object",
+  "required": ["id", "title", "status", "confidence", "category", "scope", "summary", "context", "problem", "recommended_approach", "evidence", "limitations", "created_at", "last_reviewed"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^KB-[A-Z0-9-]+$"},
+    "title": {"type": "string", "minLength": 5},
+    "status": {"enum": ["draft", "proposed", "verified", "deprecated", "superseded"]},
+    "confidence": {"enum": ["low", "medium", "high"]},
+    "category": {"enum": ["engineering-pattern", "debugging", "technology", "architecture", "security", "integration", "learning", "agent-guidance", "research"]},
+    "scope": {"enum": ["shared-framework", "project-local"]},
+    "summary": {"type": "string", "minLength": 10},
+    "context": {"type": "string"},
+    "problem": {"type": "string"},
+    "root_cause_or_principle": {"type": "string"},
+    "recommended_approach": {"type": "string", "minLength": 10},
+    "alternatives": {"type": "array", "items": {"type": "string"}},
+    "technologies": {"type": "array", "items": {"type": "string"}},
+    "versions": {"type": "array", "items": {"type": "string"}},
+    "tags": {"type": "array", "items": {"type": "string"}},
+    "applicability": {"type": "string"},
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "description"],
+        "properties": {
+          "type": {"enum": ["direct-observation", "reproducible-test", "authoritative-source", "reasoned-guidance"]},
+          "description": {"type": "string"},
+          "uri": {"type": "string"},
+          "commit": {"type": "string"},
+          "observed_result": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "related_entries": {"type": "array", "items": {"type": "string"}},
+    "related_adrs": {"type": "array", "items": {"type": "string"}},
+    "source_project": {"type": "string"},
+    "created_at": {"type": "string", "format": "date"},
+    "last_reviewed": {"type": "string", "format": "date"},
+    "review_trigger": {"type": "string"},
+    "supersedes": {"type": "array", "items": {"type": "string"}},
+    "superseded_by": {"type": "string"}
+  },
+  "additionalProperties": false
+}
